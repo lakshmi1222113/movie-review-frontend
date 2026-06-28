@@ -1,0 +1,80 @@
+/* Home Page */
+
+.home {
+    min-height: 100vh;
+    background: #141414;
+    color: white;
+}
+
+/* Content */
+
+.home-content {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Sections */
+
+.movie-section {
+    margin-top: 40px;
+}
+
+/* Heading */
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* Movie Grid */
+
+.movie-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.section-title{
+
+    font-size:24px;
+
+}
+
+.movie-grid{
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+}
+
+}
+.home-content {
+  padding-top: 20px;
+}
+
+/* Make search center and clean */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-container input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.search-container button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}

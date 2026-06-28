@@ -1,0 +1,173 @@
+/* ---------------- PAGE LAYOUT ---------------- */
+.movie-details-page {
+  padding: 20px;
+  background: #0f0f0f;
+  color: #fff;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------------- MOVIE CONTAINER ---------------- */
+.movie-details-container {
+  display: flex;
+  gap: 30px;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* ---------------- POSTER ---------------- */
+.movie-image img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* ---------------- INFO ---------------- */
+.movie-info {
+  flex: 1;
+}
+
+.movie-info h1 {
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 18px;
+  margin: 10px 0;
+  color: gold;
+}
+
+.overview {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* ---------------- REVIEWS HEADER ---------------- */
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.review-btn {
+  background: #e50914;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.review-btn:hover {
+  background: #b20710;
+}
+
+/* ---------------- REVIEW FORM ---------------- */
+.review-form {
+  margin-top: 15px;
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-form textarea {
+  height: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+}
+
+.review-form select {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  width: 100px;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: #1e7e34;
+}
+
+/* ---------------- REVIEWS LIST ---------------- */
+.reviews-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ---------------- REVIEW CARD ---------------- */
+.review-card {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.review-card p {
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* ---------------- ACTION BUTTONS ---------------- */
+.review-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background: #007bff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.delete-btn {
+  background: #dc3545;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #a71d2a;
+}
+
+/* ---------------- LOADING TEXT ---------------- */
+.loading {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
