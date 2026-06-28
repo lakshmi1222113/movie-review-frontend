@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://movie-review-backend-vlzn.onrender.com";
 
 export const getTrendingMovies = async () => {
   const res = await axios.get(`${BASE_URL}/tmdb/trending`);
