@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* FULL PAGE CENTER */
+.register-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("/login-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAIN BOX */
+.register-box {
+  width: 600px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+/* TITLE (Movie Hub) */
+.register-box h1 {
+  text-align: center;
+  color: #e50914;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* SUB TITLE */
+.register-box h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+}
+
+/* FORM ROW (2 columns) */
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* INPUT GROUP */
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* INPUT + SELECT */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* TERMS SECTION */
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #e50914;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c11119;
+}
+
+/* ERROR MESSAGE */
+.error {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* SIGN IN TEXT */
+.bottom-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #bbb;
+}
+
+.bottom-text a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  color: #e50914;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 650px) {
+  .register-box {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+.success-message {
+  margin-top: 15px;
+  color: #28a745;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 70px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e50914;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  user-select: none;
+}
+
+.toggle-password:hover {
+  color: #ff4d4d;
+}
+/* Password Input */
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 45px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 38%;
+  transform: translateY(-50%);
+  color: #b3b3b3;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.eye-icon:hover {
+  color: #e50914;
+}

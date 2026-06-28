@@ -1,0 +1,224 @@
+.profile-page{
+    min-height:100vh;
+    background:#111;
+    color:white;
+}
+
+.profile-banner{
+    height:260px;
+    background:url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600") center/cover;
+}
+
+.profile-card{
+
+    width:900px;
+    max-width:90%;
+
+    margin:-90px auto 40px;
+
+    background:rgba(28,28,28,.95);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+
+.profile-avatar{
+
+    width:170px;
+    height:170px;
+
+    border-radius:50%;
+
+    border:6px solid #E50914;
+
+    object-fit:cover;
+
+    margin-top:-120px;
+
+    background:white;
+}
+
+.profile-card h1{
+
+    margin-top:20px;
+
+    font-size:40px;
+}
+
+.profile-role{
+
+    color:#bdbdbd;
+
+    margin-top:10px;
+
+    font-size:18px;
+}
+
+.profile-details{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.detail{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+    color:#ddd;
+}
+
+.profile-stats{
+
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.stat-box{
+
+    background:#222;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.stat-box:hover{
+
+    transform:translateY(-8px);
+
+    background:#E50914;
+}
+
+.stat-box h2{
+
+    margin:15px 0;
+
+    font-size:34px;
+}
+
+.stat-box p{
+
+    font-size:18px;
+}
+
+.profile-buttons{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.profile-buttons button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+}
+
+.edit-btn{
+
+    background:#1565C0;
+
+    color:white;
+}
+
+.edit-btn:hover{
+
+    background:#0D47A1;
+}
+
+.logout-btn{
+
+    background:#E50914;
+
+    color:white;
+}
+
+.logout-btn:hover{
+
+    background:#c40812;
+}
+
+@media(max-width:768px){
+
+.profile-avatar{
+
+    width:130px;
+    height:130px;
+
+    margin-top:-80px;
+}
+
+.profile-card h1{
+
+    font-size:30px;
+}
+
+.profile-stats{
+
+    grid-template-columns:1fr;
+}
+
+.profile-details{
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.profile-buttons{
+
+    flex-direction:column;
+}
+
+.profile-buttons button{
+
+    width:100%;
+}
+
+}

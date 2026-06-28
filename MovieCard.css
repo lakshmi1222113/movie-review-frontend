@@ -1,0 +1,81 @@
+/* Movie Card */
+
+.movie-card {
+    width: 220px;
+    background: #1b1b1b;
+    border-radius: 12px;
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(229,9,20,0.4);
+}
+
+/* Poster */
+
+.movie-poster img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Details */
+
+.movie-details {
+    padding: 15px;
+}
+
+.movie-details h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 12px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Rating */
+
+.movie-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
+    margin-bottom: 15px;
+}
+
+.star-icon {
+    color: gold;
+}
+
+/* Favorite Button */
+
+
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.movie-card{
+    width:180px;
+}
+
+.movie-poster img{
+    height:260px;
+}
+
+.movie-details h3{
+    font-size:16px;
+}
+
+}
