@@ -97,7 +97,7 @@ const handleSubmit = async (e) => {
   if (Object.keys(validationErrors).length > 0) return;
 
   try {
-    const res = await axios.post("https://movie-review-backend-vlzn.onrender.com/users/register", {
+    const res = await axios.post("https://movie-review-backend-vlzn.onrender.com/users", {
       firstName: formData.firstname,
       lastName: formData.lastname,
       email: formData.email,
